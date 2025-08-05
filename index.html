@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AMALA  Portfolio</title>
+  <!-- Favicon: browser tab logo -->
+  <link rel="icon" href="photo.jpg" type="image/png" />
+
+  <style>
+    /* Root colors */
+    :root {
+      --primary: #1e90ff;
+      --bg: #f7f8fc;
+      --text: #333;
+      --card-bg: #fff;
+      --accent: #2a2a72;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header styling */
+    header {
+      background: linear-gradient(to right, #2a2a72, #009ffd);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem 3rem;
+      position: relative;
+    }
+
+    /* Visible website logo */
+    .site-logo {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+      margin: 0 auto 15px;
+      display: block;
+      border-radius: 15px;
+      background: white;
+      padding: 5px;
+    }
+
+    /* Profile picture */
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      margin: 1rem auto 1rem;
+      display: block;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #1e1e2f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      padding: 0.75rem 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #009ffd;
+    }
+
+    /* Sections */
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    section h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+      list-style: disc;
+    }
+
+    /* Download button */
+    .download-btn {
+      background-color: var(--primary);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    .download-btn:hover {
+      background-color: #0072d4;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+      nav {
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Profile photo -->
+    <img src="photo.jpg" alt="Profile Photo" class="profile-pic" />
+    
+    <h1>AMALA</h1>
+    <p>BCA Student | Frontend Developer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certs">Certifications</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a passionate <strong>Frontend Developer</strong> focused on building modern, responsive websites. I love clean UI, strong UX, and I'm always learning the latest web tech.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p>📘 SSLC – ACS MATRIC HR.SEC SCHOOL (2018–2019)</p>
+    <p>📗 HSC – ASC MATRIC HR.SEC SCHOOL (2020–2021)</p>
+    <p>🎓 BCA – SRM Arts and Science College (2022–2025)</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5 & CSS3</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>E-Cart Website</strong> - <a href="#">View Project</a></li>
+      <li><strong>IBM Cloud Security</strong> - <a href="#">View Project</a></li>
+      <li><strong>IBM Chatbot</strong> - <a href="#">View Project</a></li>
+    </ul>
+  </section>
+
+  <section id="certs">
+    <h2>Certifications</h2>
+    <ul>
+      <li>IBM Cloud Fundamentals</li>
+      <li>Google UX Design</li>
+      <li>Infosys Springboard Python</li>
+    </ul>
+  </section>
+
+  <section id="resume" style="text-align: center;">
+    <h2>Resume</h2>
+    <a href="amala resume1.pdf" class="download-btn" download>Download CV</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xqkjyvjq" method="POST" style="max-width:400px; margin:auto;">
+      <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 8px; margin: 8px 0; border-radius: 6px; border: 1px solid #ccc;">
+      <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 8px; margin: 8px 0; border-radius: 6px; border: 1px solid #ccc;">
+      <textarea name="message" placeholder="Your Message" rows="4" required style="width: 100%; padding: 8px; margin: 8px 0; border-radius: 6px; border: 1px solid #ccc;"></textarea>
+      <button type="submit" style="background: var(--primary); color: white; border: none; padding: 10px 20px; border-radius: 30px; font-weight: bold; cursor: pointer;">Send Message</button>
+    </form>
+  </section>
+
+</body>
+</html>
